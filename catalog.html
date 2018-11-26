@@ -33,13 +33,62 @@
                         <img src="img/entrance.svg" width="17" height="17" alt="Вход"> Вход
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <img src="img/basket.svg" width="17" height="17" alt="Корзина"> 2 товара
-                    </a>
-                </li>
-            </ul>
+            </ul> 
 
+            <div class="#">
+        
+                  <img src="img/basket.svg" width="17" height="17" alt="Корзина"> 2 товара
+                    <table class="basket-table">
+                         <caption class="visually-hidden">Корзина:</caption>
+                        <tbody>
+                            <tr class="basket-table-item">
+                                  <td class="basket-table-col  basket-table-col-control">
+                                    <button class="basket-table-btn  basket-table-btn-remove">Удалить</button>
+                                  </td>
+                                   <td class="basket-table-col  basket-table__col-preview">
+                                    <img src="img/1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                                   </td>
+                                <td class="basket-table-col  basket-table-col-label">
+                                    Пломбир с апельсиновым джемом
+                                </td>
+                                <td class="basket-table-col  basket-table__col-price">
+                                    <span class="basket-table-amount">1,5 кг</span>
+                                    <span class="basket-table-price">200 руб.</span>
+                                </td>
+                                <td class="basket-table-col  basket-table-col-sum">
+                                    300 руб.
+                                </td>
+                            </tr>
+                            <tr class="basket-table-item">
+                                <td class="basket-table-col  basket-table-col-control">
+                                    <button class="basket-table-btn  basket-table-btn-remove">Удалить</button>
+                                </td>
+                                <td class="basket-table-col  basket-table-col-preview">
+                                    <img src="img/3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                                </td>
+                                <td class="basket-table-col  basket-table-col-label">
+                                    Клубничный пломбир с присыпкой из белого шоколада
+                                </td>
+                                <td class="basket-table-col  basket-table-col-price">
+                                    <span class="basket-table-amount">1,5 кг</span>
+                                    <span class="basket-table-price">300 руб.</span>
+                                </td>
+                                <td class="basket-table-col  basket-table-col--sum">
+                                    450 руб.
+                                </td>
+                            </tr>
+                        </tbody>
+                            <tfoot>
+                               <tr class="basket-table-item  basket-table-item-total">
+                                 <td colspan="5">
+                                    <div class="basket-table-total">Итого: 750 руб.</div>
+                                    <a class="btn  btn-tiny" href="/">Оформить заказ</a>
+                                 </td>  
+                                </tr>    
+                        </tfoot>
+                    </table>       
+            </div> 
+            
             <div class="">
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs-item">

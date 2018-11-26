@@ -13,30 +13,63 @@
             <a class="main-header-logo" href="index.html">
                 <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
             </a>
-            <ul class="site-navigation">
-                <li><a href="catalog.html">Каталог</a></li>
+        
+               <ul class="site-navigation">
+                  <li><a href="catalog.html">Каталог</a></li>
+               </ul>
+                      
+                  <ul class="site-navigation">
+                    <li><a href="catalog.html">новинки</a></li>
+                    <li class="#"><a href="#">сливочное</a></li>
+                    <li class="#"><a href="#">щербеты</a></li>
+                    <li class="#"><a href="#">фруктовый лед</a></li>
+                    <li class="#"><a href="#">меролин</a></li>
+                  </ul>
+            <ul>
                 <li class="#"><a href="#">Доставка и оплата</a></li>
-                <li class="#"><a href="#">О компании</a></li>
             </ul>
             <ul>
+                <li class="#"><a href="#">О компании</a></li>
+            </ul>
+            
+               <ul>
                 <li>Поиск
                     <div>
                         <input type="search">
                         <input type="submit" value="Поиск">
                     </div>
                 </li>
+               </ul> 
+               <ul>
                 <li>
                     <a href="#">
                         <img src="img/entrance.svg" width="17" height="17" alt="Вход"> Вход
                     </a>
                 </li>
+                </ul>
+                <div class="page-header">
+                    <form class="login-form" id="login-form" action="/" method="post">
+                      <input type="email" name="email" placeholder="Электронная почта">
+                      <input type="password" name="password" placeholder="Пароль">
+                      <input class="btn" type="submit" value="Войти">
+                      <div class="login-form-links">
+                        <a class="login-form-link" href="#">
+                          <span class="login-form-link-content">Забыли пароль?</span>
+                        </a>
+                        <a class="login-form-link" href="#">
+                          <span class="login-form-link-content">Новая регистрация</span>
+                        </a>
+                      </div>
+                    </form>
+                </div>
+                <ul>
                 <li>
                     <a href="#">
                         <img src="img/basket.svg" width="17" height="17" alt="Корзина"> Корзина
                     </a>
                 </li>
-            </ul>
-        </nav>
+                </ul>
+        </nav>           
     </header>
 
     <main class="container">
@@ -105,7 +138,31 @@
             <li class=""><a href="#">О производстве</a></li>
             <li class=""><a href="#">Экологические стандарты</a></li>
         </ul>
-
+        <div class="overlay"></div>
+       <div class="modal-content">
+       <div class="modal-content-title">
+          Мы обязательно вам ответим!
+       </div>
+       <button class="modal-content__btn-close" type="button" title="Закрыть">Закрыть</button>
+       <div class="modal-content-wrap">
+         <form class="feedback-form" id="feedback-form" action="/" method="post">
+           <div class="input-wrap">
+             <input id="user-name" type="text" name="user-name" placeholder="Как вас зовут?" required>
+             <label for="user-name">Как вас зовут?</label>
+           </div>
+           <div class="input-wrap">
+             <input id="user-email" type="text" name="user-email" placeholder="Ваша почта для ответа?" required>
+             <label for="user-email">Ваша почта для ответа?</label>
+           </div>
+           <div class="input-wrap">
+             <textarea id="user-message" name="message" placeholder="Напишите что-нибудь..." required></textarea>
+             <label for="user-message">Напишите что-нибудь...</label>
+           </div>
+           <input class="btn" type="submit" value="Отправить">
+         </form>
+       </div>
+    </div>
+  
         <div class="copyright">
             <a href="https://htmlacademy.ru" class="copyright-link">
                 <img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" class="copyright-img" width="108" height="38">
@@ -113,6 +170,7 @@
             <p class="copyright-info">Сделано в <a href="https://htmlacademy.ru" class="copyright-link">HTML Academy</a> © 2017</p>
         </div>
     </footer>
+    
 
 </body>
 
