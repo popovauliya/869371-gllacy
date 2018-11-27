@@ -15,27 +15,60 @@
             </a>
 
             <ul class="site-navigation">
-                <li><a href="#">Каталог</a></li>
-                <li class="#"><a href="#">Доставка и оплата</a></li>
-                <li class="#"><a href="#">О компании</a></li>
+                    <li>
+                        <a href="catalog.html">Каталог</a>
+    
+                        <ul class="site-navigation">
+                            <li><a href="catalog.html">новинки</a></li>
+                            <li class="#"><a href="#">сливочное</a></li>
+                            <li class="#"><a href="#">щербеты</a></li>
+                            <li class="#"><a href="#">фруктовый лед</a></li>
+                            <li class="#"><a href="#">меролин</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="#"><a href="#">Доставка и оплата</a></li>
+    
+                    <li class="#"><a href="#">О компании</a></li>
             </ul>
-
-
-            <ul class="">
-                <li>Поиск
-                    <div>
-                        <input type="search">
-                        <input type="submit" value="Поиск">
-                    </div>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/entrance.svg" width="17" height="17" alt="Вход"> Вход
-                    </a>
-                </li>
-            </ul> 
-
-            <div class="#">
+    
+    
+                <ul>
+                    <li class="search">
+                        <form class="search-form" action="/" method="post">
+                            <label for="search" class="visually-hidden">Поиск</label>
+                            <input type="search" placeholder="Поиск" id="search">
+    
+                            <input type="submit" value="Поиск">
+                        </form>
+                    </li>
+    
+                    <li>
+                        <a href="#">Вход</a>
+    
+                        <div class="page-header">
+                            <form class="login-form" id="login-form" action="/" method="post">
+                                <label for="email" class="visually-hidden">Электронная почта</label>
+                                <input type="email" name="email" placeholder="Электронная почта" id="email">
+    
+                                <label for="password" class="visually-hidden">Пароль</label>
+                                <input type="password" name="password" placeholder="Пароль" id="password">
+    
+                                <input class="btn" type="submit" value="Войти">
+                                <div class="login-form-links">
+                                    <a class="login-form-link" href="#">
+                                        Забыли пароль?
+                                    </a>
+                                    <a class="login-form-link" href="#">
+                                        Новая регистрация
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+    
+            <li>
+                <div class="#">
         
                   <img src="img/basket.svg" width="17" height="17" alt="Корзина"> 2 товара
                     <table class="basket-table">
@@ -347,6 +380,29 @@
             <p class="copyright-info">Сделано в <a href="https://htmlacademy.ru" class="copyright-link">HTML Academy</a> © 2017</p>
         </div>
     </footer>
+    <div class="modal-content">
+            <div class="modal-content-title"></div>
+               Мы обязательно вам ответим!
+            </div>
+            <button class="modal-content-btn-close" type="button" title="Закрыть">Закрыть</button>
+            <div class="modal-content-wrap">
+              <form class="feedback-form" id="feedback-form" action="/" method="post">
+                <div class="input-wrap">
+                  <input id="user-name" type="text" name="user-name" placeholder="Как вас зовут?" required>
+                  <label for="user-name">Как вас зовут?</label>
+                </div>
+                <div class="input-wrap">
+                  <input id="user-email" type="text" name="user-email" placeholder="Ваша почта для ответа?" required>
+                  <label for="user-email">Ваша почта для ответа?</label>
+                </div>
+                <div class="input-wrap">
+                  <textarea id="user-message" name="message" placeholder="Напишите что-нибудь..." required></textarea>
+                  <label for="user-message">Напишите что-нибудь...</label>
+                </div>
+                <input class="btn" type="submit" value="Отправить">
+              </form>
+            </div>
+         </div>
 
 </body>
 
