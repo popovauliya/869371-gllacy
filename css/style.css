@@ -46,7 +46,7 @@ ul li {
     color: #323232;
 }
 
-.site-navigation a..active {
+.site-navigation a.active {
     background-color: #d07058;
     color: #ffffff;
 }
@@ -193,35 +193,38 @@ footer {}
 
 .breadcrumbs a {
     font-size: 14px;
+    line-height: 1.14px;
+    font-weight: normal;
     color: #ffffff;
 }
-.container h1 h2 {
-    width: 381px;
-    height: 33px; 
+.container h1  {
     font-size: 35px;
+    line-height: 1.17px;
+    font-weight: bold;
     color: #ffffff;
 
 }
-.product h2{
-    width: 247px;
-    height: 38px;
+.name-product{
     font-size: 16px;
-  
+    line-height: 1.38px;
+    font-weight: 500;
+    color: #ffffff;
 
 }
       
 .price-value {
-    width: 75px;
-    height: 34px;
-    font-size: 45px;
+   font-size:  45px;
+   line-height: 1px;
+   font-weight: bold;
+  
     color: #ffffff;
 }
 
 .prce-kilo{
-    width: 72px;
-    height: 34px;
-    font-size: 30px;
-    color: #ffffff;
+  font-size: 30px;
+  line-height: 1.5px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 
