@@ -9,36 +9,49 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body >
+    <div class ="body-wrapper">
+        <div class="wrapper">
 
-    <header class="main-header">
-        <nav class="main-navigation">
-            <a class="main-header-logo" href="index.html">
+    <header class="main-header container">
+        
+        <nav class="main-navigation container ">
+            <a class="logo" href="index.html">
                 <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
             </a>
 
             <!--menu-->
             <ul class="site-navigation">
-                <li>
+                <li class="site-navigation- link">
                     <a href="catalog.html">Каталог</a>
 
-                    <ul class="site-navigation-sub">
-                        <li><a href="catalog.html">новинки</a></li>
-                        <li class="#"><a href="#">сливочное</a></li>
-                        <li class="#"><a href="#">щербеты</a></li>
-                        <li class="#"><a href="#">фруктовый лед</a></li>
-                        <li class="#"><a href="#">меролин</a></li>
+                    <ul class="catalog-submenu">
+                        <li class="catalog-submenu-item">
+                            <a href="catalog.html">новинки</a>
+                        </li>
+                        <li class="catalog-submenu-item">
+                            <a href="#">сливочное</a>
+                        </li>
+                        <li class="catalog-submenu-item">
+                            <a href="#">щербеты</a>
+                        </li>
+                        <li class="catalog-submenu-item">
+                            <a href="#">фруктовый лед</a>
+                        </li>
+                        <li class="catalog-submenu-item">
+                            <a href="#">меролин</a>
+                        </li>
                     </ul>
                 </li>
 
-                <li class="#"><a href="#">Доставка и оплата</a></li>
+                <li><a class="site-navigation-link" href="#">Доставка и оплата</a></li>
 
-                <li class="#"><a href="#">О компании</a></li>
+                <li><a class="site-navigation-link" href="#">О компании</a></li>
             </ul>
 
-            <ul class="site-searchbox">
+            <ul class="user-navigation">
                 <!--search-->
-                <li class="site-searchbox-inner search">
+                <li class="user-navigation-item search">
                     <form class="search-form" action="/" method="post">
                         <label for="search" class="visually-hidden">Поиск</label>
                         <input type="search" placeholder="Поиск" id="search">
@@ -48,16 +61,16 @@
                 </li>
 
                 <!--login-form-->
-                <li class="site-searchbox-inner">
-                    <a href="#">Вход</a>
+                <li class="user-navigation-item login-link">
+                    <a href="login-link">Вход</a>
 
-                    <div class="page-header">
-                        <form class="login-form" id="login-form" action="/" method="post">
-                            <label for="email" class="visually-hidden">Электронная почта</label>
+                    <div class="popup-container">
+                        <form class="authorization-form"  action="/" method="post">
+                            <label for="email" class="hiden-top">Электронная почта</label>
                             <input type="email" name="email" placeholder="Электронная почта" id="email">
 
-                            <label for="password" class="visually-hidden">Пароль</label>
-                            <input type="password" name="password" placeholder="Пароль" id="password">
+                            <label for="password" class="hiden-top">Пароль</label>
+                            <input type="text" name="password" placeholder="Пароль" id="password">
 
                             <input class="btn" type="submit" value="Войти">
                             <div class="login-form-links">
@@ -73,7 +86,7 @@
                 </li>
 
                 <!--basket-->
-                <li class="site-searchbox-inner">
+                <li class="user-navigation-inner">
                     <a href="#">
                         <img src="img/basket.svg" width="17" height="17" alt="Корзина"> Пусто
                     </a>
@@ -87,7 +100,8 @@
             <p class="page-header-working-hours">С 10 до 20, ежедневно</p>
             <p class="page-header-tel">8 812 450-25-25</p>
         </div>
-    </header>
+    </div>
+   </header>
 
     <main class="container">
         <section class="features">
@@ -121,9 +135,9 @@
                 <p>
                     Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
                 </p>
-                <form class="subscribe-form" id="login-form" action="/" method="post">
-                    <label for="subscribe-email" class="visually-hidden">Электронная почта</label>
-                    <input type="subscribe-email" name="subscribe-email" placeholder="Электронная почта" id="subscribe-email">
+                <form class="subscribe-form"  action="/" method="post">
+                    <label for="email" class="visually-hidden">Электронная почта</label>
+                    <input type="email" name="email" placeholder="Электронная почта">
 
                     <input class="btn subscribe-btn" type="submit" value="Войти">
                 </form>
@@ -150,12 +164,9 @@
                     </svg>
                 </a>
                 <a href="http://facebook.com" title="facebook" class="social-link">
-                    <?xml version="1.0" encoding="utf-8"?>
                       
-                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-                        <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
-	v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z" />
+                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                       <path fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/>
                     </svg>
 
                 </a>
@@ -208,7 +219,7 @@
 
         <button class="modal-content-btn-close" type="button" title="Закрыть">Закрыть</button>
     </div>
-
+    </div>
 </body>
 
 </html>
