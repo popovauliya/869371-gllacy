@@ -14,10 +14,8 @@ body {
    
 }
 .wrapper{
-    min-width: 1200px;
-    max-width: 1200px;
+  width: 1200px;
     margin: 0 auto;
-    padding-top: 10px;
     
 }
   
@@ -764,17 +762,21 @@ body {
   
   /*  -------Футер-------  */
   .wrapper {
-    min-width: 900px;
+    
     max-width: 1200px;
     margin: 0 auto;
 }
-  . wrapper main-footer {
+  . main-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding-top: 18px;
     padding-bottom: 28px;
   }
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+}
   
   .main-footer.inner {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -857,7 +859,11 @@ body {
     -webkit-box-direction: normal;
        /*-ms-flex-direction: column;
            flex-direction: column;*/
-    
+           margin: 0;
+           padding: 0;
+           height: 45px;
+         
+           list-style: none;
   
     /* Временно для сетки */
     /*outline: 2px solid #afad1b;*/
