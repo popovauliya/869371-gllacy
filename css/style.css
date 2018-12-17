@@ -153,8 +153,8 @@ body {
    fill: #ffffff;
  }
  .login-link > a:hover path,
-.login-link > a:focus path,
-.login-link > a:active path  {
+ .login-link > a:focus path,
+ .login-link > a:active path  {
    fill: #000000;
  }
  .login-link:hover .popup-login,
@@ -467,7 +467,7 @@ body {
     width: 49px;
     height: 49px;
   
-    background-image: url(../img/article-blog.jpg);
+    background-image: url(../img/svg/ice-cream.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -538,10 +538,11 @@ body {
   
     color: #323232;
     
-   background-color: #ffffff;
+    background-color: #ffffff;
     
-    background-image: url(../img/article-blog.jpg);
-    background-position: -52px -224px;
+    background-image: url(../img/strawberry-background.jpg);
+    background-size: 100% 100%;
+    background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
@@ -583,7 +584,7 @@ body {
   
     background-image: url(../img/substrate.jpg);
    
-    background-position: 0 0;
+    
     background-repeat: repeat;
     border-radius: 15px;
   }
@@ -762,7 +763,12 @@ body {
   
   
   /*  -------Футер-------  */
-  .main-footer {
+  .wrapper {
+    min-width: 900px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  . wrapper main-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -827,8 +833,14 @@ body {
   }
   
   .footer-info {
-    margin-top: 12px;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
     width: 335px;
+    margin: 12px auto 0;
+    padding: 0;
+    list-style-type: none;
+    border: 0;
   
     /* Временно для сетки */
     /*outline: 2px solid #afad1b;*/
@@ -845,11 +857,7 @@ body {
     -webkit-box-direction: normal;
        /*-ms-flex-direction: column;
            flex-direction: column;*/
-    margin: 0;
-    padding: 0;
-    height: 45px;
-  
-    list-style: none;
+    
   
     /* Временно для сетки */
     /*outline: 2px solid #afad1b;*/
