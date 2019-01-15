@@ -1038,8 +1038,6 @@ input#special-offer-3:active ~ .body-wrapper label[for="special-offer-2"] {
 
   background-color: #ffffff;
   background-image: url("../img/strawberry-background.jpg");
-  background-position: -52px -224px;
-  background-repeat: no-repeat;
   border-radius: 15px;
 }
 
